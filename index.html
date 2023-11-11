@@ -1,7 +1,7 @@
 ﻿<!DOCTYPE html>
 <html>
  <head> 
-  <title>欢迎来到阿豪站点★</title> 
+  <title>阿豪个人主页</title> 
   <meta charset="utf-8" /> 
   <meta http-equiv="content-language" content="zh-cn" /> 
   <link rel="shortcut icon" href="assets\wx_picture.jpg" /> 
@@ -17,18 +17,34 @@
    <!-- Header --> 
    <header id="header"> 
     <div class="icon"> 
-     <img src="assets\wx_picture.jpg" alt="欢迎来到阿豪站点★" title="欢迎来到阿豪站点★" class="logo" /> 
+     <img src="assets\wx_picture.jpg" alt="K1" title="K1" class="logo" /> 
     </div> 
     <div class="content"> 
-     <div class="inner"> 
-      <h1>毕业快乐</h1> 
-      <p>
-        豪哥、涛哥、还有华强</p>
+        <div class="inner" style="
+            padding-bottom: 1px;
+            padding-top: 1px;
+            padding-left: 100px;
+            padding-right: 100px;
+            ">
+      <div class="hjk",id="site-subtitle">
+        <span id="element"></span>
+        <span class="typed-cursor" aria-hidden="true"></span>
+      </div>
+
+    <p style="
+    padding-top: 80px;
+    padding-bottom: 50px;">
+        豪哥、涛哥、还有华强</p>    
+      
+
      </div> 
     </div> 
+    
     <nav> 
      <ul> 
-      <li> <a target="_blank" href="https://github.com/fengzhihao1108">Github</a></li> 
+      <li> <a target="_blank" href="https://github.com/fengzhihao1108">Github</a>
+        
+    </li>
 	  <li> <a target="_blank" href="https://huaqiang.yuyuefei.eu.org/">ChatGPT 豪AI</a></li>
 
      </ul> 
@@ -57,6 +73,7 @@
   <script src="assets/js/breakpoints.min.js"></script> 
   <script src="assets/js/util.js"></script> 
   <script src="assets/js/main.js"></script> 
+  <script src="assets/js/titlee.js"></script> 
   <style>canvas { padding:0; margin:0; }</style> 
   <!-- sakura shader --> 
   <script id="sakura_point_vsh" type="x-shader/x_vertex">
@@ -1148,5 +1165,48 @@ window.addEventListener('load', function(e) {
     w['r'+r] = w['r'+r] || w['webkitR'+r] || w['mozR'+r] || w['msR'+r] || w['oR'+r] || function(c){ w.setTimeout(c, 1000 / 60); };
 })(window, 'equestAnimationFrame');
 </script>  
+
+ <!-- 打字机模块 -->
+  <!-- Element to contain animated typing -->
+
+  
+  <style>   
+    div.hjk {
+      position:relative;
+      top: 50px;
+      text-align: center;
+      font-weight:400;
+      font-size: 35px;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.15);
+      line-height: 1.5;
+      color: #ffff;
+      z-index: 20;
+    }
+    </style>
+
+  <!-- Load library from the CDN -->
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+  <!-- Setup and start animation! -->
+  <script>
+    var typed = new Typed('#element', {
+      strings: [
+            "逢人不说人间事，便是人间无事人。",
+            "扶摇直上九万里，万里写入胸怀间。",
+            "富在术数，不在劳身，贵在权势，不在力耕。",
+            "祝你",
+            "毕业快乐！"
+        ],
+      startDelay: 1000,
+      backDelay: 1000,
+      //打字速度
+      typeSpeed: 110,
+      //删除速度
+      backSpeed: 50,
+      // 循环开关
+      loop: false
+    });
+  </script>
+
  </body>
 </html>

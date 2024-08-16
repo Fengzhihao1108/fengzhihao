@@ -28,6 +28,7 @@ body {
 
 ol, ul {
 	list-style: none;
+	
 }
 
 blockquote, q {
@@ -723,6 +724,7 @@ input, select, textarea {
 
 		ol li {
 			padding-left: 0.25em;
+			
 		}
 
 	ul {
@@ -733,6 +735,24 @@ input, select, textarea {
 
 		ul li {
 			padding-left: 0.5em;
+			position: relative;
+			
+		}
+
+		ul li.myfzhcard{
+			position: relative;
+		}
+
+		nav ul li img.img_icon {
+			position: absolute;
+			margin-left: -70px;
+			margin-top: -44px;
+		}
+		nav ul li div.ai_logo {
+			position: absolute;
+			margin-left: 15px;
+			margin-top: -45px;
+			width: 10px;
 		}
 
 		ul.alt {
